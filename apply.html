@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Отклик на вакансию — Comwingo Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="page">
+  
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-box">
+      <span class="logo-text">Comwingo Store</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html" class=""><span class="icon">🏠</span>Главная</a><a href="vacancy.html" class=""><span class="icon">💼</span>Вакансия</a><a href="apply.html" class="active" ><span class="icon">✍️</span>Отклик</a><a href="how-to-start.html" class=""><span class="icon">🚀</span>Как начать</a><a href="reviews.html" class=""><span class="icon">⭐</span>Отзывы</a><a href="about.html" class=""><span class="icon">ℹ️</span>О нас</a>
+    </nav>
+    <button class="nav-burger" aria-label="Открыть меню">☰</button>
+  </div>
+</header>
+
+  <main class="section">
+    <div class="container">
+      <div class="cta-stripe">
+        <div>
+          <div class="cta-stripe-text-title">Готовы начать прямо сейчас?</div>
+          <div class="cta-stripe-text-sub">Отклик — 1 минута, ответ менеджера — в течение дня.</div>
+        </div>
+        <a href="#apply-form" class="btn btn-primary">Откликнуться</a>
+      </div>
+
+      <section class="section">
+        <div class="form-card">
+          <div class="section-header">
+            <div class="badge"><span class="icon">✍️</span><span>Отклик</span></div>
+            <h2 class="section-title">Анкета менеджера AliExpress</h2>
+            <p class="section-subtitle">
+              Заполните форму — получите трек-код и отправьте его менеджеру в Telegram <a href="https://t.me/ComwingoStore_Tatyana" target="_blank" rel="noopener">@ComwingoStore_Tatyana</a>.
+            </p>
+          </div>
+
+          <form id="apply-form" class="form-grid">
+            <div class="form-field">
+              <label class="form-label" for="firstName">Имя 😊</label>
+              <input class="input" id="firstName" name="firstName" placeholder="Ваше имя" required />
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="lastName">Фамилия 😎</label>
+              <input class="input" id="lastName" name="lastName" placeholder="Ваша фамилия" required />
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="phone">Телефон 📱</label>
+              <input class="input" id="phone" name="phone" placeholder="+7 ..." required />
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="birthday">Дата рождения 🎂</label>
+              <input class="input" id="birthday" name="birthday" type="date" required />
+            </div>
+            <div class="form-field">
+              <span class="form-label">Платформа смартфона</span>
+              <div class="platform-toggle">
+                <button type="button" class="platform-option" data-value="iPhone">
+                  <span class="icon">🍏</span> iPhone
+                </button>
+                <button type="button" class="platform-option" data-value="Android">
+                  <span class="icon">🤖</span> Android
+                </button>
+              </div>
+              <input type="hidden" id="platform" name="platform" required />
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="telegram">Telegram (@username) ✈️</label>
+              <input class="input" id="telegram" name="telegram" placeholder="@username" required />
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="comment">Дополнительно (по желанию)</label>
+              <textarea class="textarea" id="comment" name="comment" rows="3" placeholder="Коротко расскажите о себе, опыте или ожиданиях от работы"></textarea>
+            </div>
+
+            <div class="form-footer">
+              <button type="submit" class="btn btn-primary btn-full">Зарегистрироваться</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+<footer class="footer">
+  <div class="footer-inner">
+    <span>© Comwingo Store, AliExpress. Все права защищены.</span>
+    <span>Техника Apple / Samsung / Sony · Удалённая работа</span>
+  </div>
+</footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
